@@ -3,9 +3,12 @@ package com.actitime.objectrepository;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.actitime.generics.BaseClass;
+
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage {
+public class LoginPage extends BaseClass {
 	@FindBy(id="username")
 	private WebElement untbx;
 	@FindBy(name="pwd")
