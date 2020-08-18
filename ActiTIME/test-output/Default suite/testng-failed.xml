@@ -3,20 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.actitime.testscripts.CreateCustomer"/>
+      <class name="com.actitime.testscripts.CreateNewTask"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.actitime.testscripts.CreateCustomer">
-        <methods>
-          <include name="logout"/>
-          <include name="closeBrowser"/>
-          <include name="testCreateCustomer"/>
-          <include name="login"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- com.actitime.testscripts.CreateCustomer -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
