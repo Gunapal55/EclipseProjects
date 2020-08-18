@@ -26,10 +26,13 @@ public class HiddenDivision {
 		WebElement YearListbox = driver.findElement(By.className("ui-datepicker-year"));
 		Select s1=new Select(YearListbox);
 		s1.selectByVisibleText("1995");
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[text()='11']")).click();
 		//click on contact numb
+		Thread.sleep(2000);
 		driver.findElement(By.id("alternative_number")).sendKeys("9845098450");
 		//click on renew button
+		Thread.sleep(2000);
 		driver.findElement(By.id("renew_policy_submit")).click();
 		//close the browser
 		driver.close();
